@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MDM4U</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+<!--end of Navigation bar-->
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+<div id="myTop" class="w3-container w3-top w3-theme w3-large">
+  <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+  <span id="myIntro" class="w3-hide">MDM4U</span></p>
+</div>
+
+<header class="w3-container w3-theme" style="padding:64px 32px">
+  <h1 class="w3-xxxlarge">2.5 Distribution de données décrite par deux variables </h1>
+</header>
+
+<div class="w3-container" style="padding:32px">
+
+<!-- Tu peux complètement modifier le contenu ci-dessous -->
+
+<h4> Voici comment j'ai tracé à l'aide de Desmos la courbe la mieux ajustée du premier exercice. On constate que la valeur du coefficient de corrélation est -0.8988. D'après cette valeur, on peut conclure que la direction de cette ligne est négative et que sa force du lien linéaire est forte.</h4> 
+<iframe src="https://www.desmos.com/calculator/4pqz1jf1ty?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+<h4> De suite, j'ai utilisé le même logiciel (Desmos) afin de tracé la courbe la mieux ajustée du second exercice. On réalise que la valeur du coefficient de corrélation est 0.4046. On observant le graphique ou même en savant le coefficient de corrélation, on conclue que la direction de la ligne est positive et que sa force du lien linéaire est faible, presque nulle.</h4>
+<iframe src="https://www.desmos.com/calculator/e6mo9zrang?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+<h4> Pour le dernier exercice, j'ai changé de logiciel et je me suis tourner vers Google Sheets. À l'aide d'une vidéo youtube, j'ai réussi à créer un graphique ainsi qu'une courbe de tendance. Vous trouverez ci dessous la vidéo explicatif...</h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3FNXuqZhJ4g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h4> Voici le lien vers mon google sheets du dernier exercice...</h4>
+<a href="https://docs.google.com/spreadsheets/d/17yrCSnlKuMcn40KzXazy5ydKARzXxFIi3oT2n2WbbBs/edit?usp=sharing">Lien vers le dernier exercice</a>
+<h4> On constate que la valeur du coefficient de corrélation est 0.9077. Cette valeur nous mène à comprendre que la direction de cette ligne est positive. En se basant sur cette valeur, on détermine que la force du lien linéaire est forte et si on arrondis, on peut même conclure qu'elle est très forte. 
+
+<!-- Tu peux complètement modifier le contenu par dessus cette ligne -->
+
+</div>
+
+<footer class="w3-container w3-theme" style="padding:32px">
+  <p>Contenu de cette page web par M. Gore (prénom: Pytha)</p>
+</footer>
+     
+</div>
+
+<script>
+// Open and close the sidebar on medium and small screens
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Change style of top container on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+    document.getElementById("myIntro").classList.add("w3-show-inline-block");
+  } else {
+    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+  }
+}
+
+</script>
+     
+</body>
+</html> 

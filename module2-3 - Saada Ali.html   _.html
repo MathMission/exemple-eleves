@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MDM4U</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+<!--end of Navigation bar-->
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+<div id="myTop" class="w3-container w3-top w3-theme w3-large">
+  <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+  <span id="myIntro" class="w3-hide">MDM4U</span></p>
+</div>
+
+<header class="w3-container w3-theme" style="padding:64px 32px">
+  <h1 class="w3-xxxlarge">2.3 Les mesures de dispersion</h1>
+</header>
+
+<div class="w3-container" style="padding:32px">
+
+<!-- Tu peux complètement modifier le contenu ci-dessous -->
+<h3>Aujourd'hui on a appris que sont les mesures de dispersion et comment pouvoir les calculer. On a appris 2 méthodes de mesures afin de mesurer quantitativement la dispersion. Les méthodes de mesure incluent: l'étendue, les quartiles, les écart interquartiles et l'écart-type et la variance</h3> 
+<h4>L'étendue</h4>
+<h4>L'étendue est la entre la plus grande valeur d'une série de distribution et la plus petite valeur. Soit disons que le plus grand nombre d'une série quelconque est 250 et le minimum est de 97...comment calculer l'étendue? On utilise cette formule: max-min=étendue donc on fait le calcul suivant. 250-97=153. Donc dans ce cas, l'étendue est de 153.</h4>
+<h4> Les quartiles et l'écart interquartile</h4>
+<h4>- Le deuxième quartile (Q2) aussi connue sous le nom "médiane" résulte à la valeur au centre de l'ensemble de données quelconque.</h4>
+<h4>- Le premier quartile (Q1) est la médiane du coté inférieur et le troisième quartile (Q3) est la médiane du coté supérieur.</h4>
+<h4>- La différence du troisième quartile et le deuxième quartile est nommée l'écart interquartile. On dit que l'écart interquartile est très pertinent car il contient la moitié centrale.</h4> 
+<h4> La variance et l'écart type</h4>
+<a href="https://www.alloprof.qc.ca/fr/eleves/bv/mathematiques/l-ecart-type-m1508">Lien vers Alloprof qui explique bien l'écart type et comment le calculer</a>
+<h4> Google slides (leçon)</h4>
+<a href="https://docs.google.com/presentation/d/1tXPZIZGQORBiqncTZE7DXeNAXTLYVB5rUZZRTPkWiaU/edit#slide=id.gc4e4700f0f_2_62">Leçon</a>
+<h4>Les exercices 2.3 (google docs)</h4>
+<a href="https://docs.google.com/document/d/1pdSyh0xYenO1fVhHY3o6r9uK1REvxNpkgZQ--1Sk3_M/edit?usp=sharing">Exercices 2.3 (docs)</a>
+<h4>Les exercices 2.3 (google sheets)</h4>
+<a href="https://docs.google.com/spreadsheets/d/1YqsrAiyuBnqnjvx1fDaTgccb1rlHaBs8nEQ89AVOOLk/edit?usp=sharing">Exercices 2.3 (sheets)</a>
+<!-- Tu peux complètement modifier le contenu par dessus cette ligne -->
+
+</div>
+
+<footer class="w3-container w3-theme" style="padding:32px">
+  <p>Contenu de cette page web par M. Gore (prénom: Pytha)</p>
+</footer>
+     
+</div>
+
+<script>
+// Open and close the sidebar on medium and small screens
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Change style of top container on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+    document.getElementById("myIntro").classList.add("w3-show-inline-block");
+  } else {
+    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+  }
+}
+
+</script>
+     
+</body>
+</html> 

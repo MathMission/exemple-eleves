@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MDM4U</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+<!--end of Navigation bar-->
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+<div id="myTop" class="w3-container w3-top w3-theme w3-large">
+  <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+  <span id="myIntro" class="w3-hide">MDM4U</span></p>
+</div>
+
+<header class="w3-container w3-theme" style="padding:64px 32px">
+  <h1 class="w3-xxxlarge">1.2 - L’échantillonnage</h1>
+</header>
+
+<div class="w3-container" style="padding:32px">
+
+<!-- Tu peux complètement modifier le contenu ci-dessous -->
+
+<h1>Méthodes d'échantillonage</h1>
+<h2>Échantillonage volontaire</h2>
+<p> Ce type d'échantillonnage arrive quand les gens offrent volontairement leurs services pour l'étude dont il est question(Dans les tests des nouvelles drogues/ ex: Moderna  vaccine).</p>
+<h2>Échantillonage aléatoire simple</h2>
+<p>Un échantillonnage aléatoire simple est quand chaque membre d'une population a une chance égale d'être inclus à l'intérieur de l'échantillon(Satisfaction des élèves au Collège Français). </p>
+<h2>Échantillonage aléatoire stratifié</h2>
+<p>En se basant sur une caractéristique d’une population ciblée, on divise cette population en sous groupes pour ensuite sélectionner de façon aléatoire des membres de chacune des sous groupes(strates) en prenant en compte leur proportion par rapport au population(Un sondage quelconque pour chaque année d'études à l'école).</p>
+<h2>Échantillonage aléatoire en grappes</h2>
+<p>En se basant sur la position géographique de la population ciblée et non une caractéristique, on la divise cette population en sous-groupes(grappes) pour ensuite sélectionner de façon aléatoire un certain nombre de façon aléatoire afin de former l'échantillon(Demander des élèves secondaire de différentes écoles s'ils aime venir à l'école).</p>
+<h2>Échantillonage aléatoire systématique</h2>
+<p>Un échantillonnage systématique est quand chaque élément qui compose l'échantillon est choisi de façon régulière, selon un intervalle régulier, à l'intérieur de la population ciblée.</p>
+
+
+<h1>Exercices</h1>
+<p>Tu vas supprimer ce paragraphe.  Dans le lien qui mène vers ton travail, change le # pour un lien vers la copie complète du devoir que tu auras copié dans ton Google Drive.</p>
+
+<p><a href="https://docs.google.com/document/d/1JkB9PKgYNFofQECEfUbo1U_yT7UpjI92gYnb9p7CNjo/edit?usp=sharing" target="_blank">Exercices 1.1 et 1.2 - La représentation des données et l'échantillonage</a>
+</p>
+
+<a href="https://www.mybib.com/b/vB7gXp">View Bibliography</a>
+<script src="https://www.mybib.com/e/script" bibliography="vB7gXp"></script>
+
+<!-- Tu peux complètement modifier le contenu par dessus cette ligne -->
+
+</div>
+
+<footer class="w3-container w3-theme" style="padding:32px">
+  <p>Contenu de cette page web par M. Gore (prénom: Pytha)</p>
+</footer>
+     
+</div>
+
+<script>
+// Open and close the sidebar on medium and small screens
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Change style of top container on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+    document.getElementById("myIntro").classList.add("w3-show-inline-block");
+  } else {
+    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+  }
+}
+
+</script>
+     
+</body>
+</html> 

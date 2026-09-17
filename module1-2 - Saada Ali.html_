@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MDM4U</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+<!--end of Navigation bar-->
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+<div id="myTop" class="w3-container w3-top w3-theme w3-large">
+  <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+  <span id="myIntro" class="w3-hide">MDM4U</span></p>
+</div>
+
+<header class="w3-container w3-theme" style="padding:64px 32px">
+  <h1 class="w3-xxxlarge">1.2 - Échantillonage</h1>
+</header>
+
+<div class="w3-container" style="padding:32px">
+
+<!-- Tu peux complètement modifier le contenu ci-dessous -->
+
+<h1>Méthodes d'échantillonnage</h1>
+<h2>Échantillonnage volontaire</h2>
+<p>Un échantillonnage est un type d'échantillonnage intervenant quand des gens offrent volontairement leurs services pour l'étude en question. Il est moins évident de recruter des personnes au hasard pour participer aux expériences donc les chercheurs se fient à la participation des personnes qui se sont portées volontaire. Un exemple assez connu d'échantillonnage volontaire est "l'expéri-pharm". Les chercheurs qui travail dans ce domaine mettent des annonces ou des publicités afin d'exprimer leur besoin de volontaires. Voici un exemple d'annonce que les chercheurs mettent en place: Nous cherchons présentement des hommes et des femmes âgés de 18 à 55 ans, en bonne santé, pour participer à une étude clinique sur un médicament déjà offert en ventre libre. En plus de mettre des annonces en ligne, les chercheurs offrent des récompenses en grandes sommes d'argent.</p>
+<h2>Échantillonage aléatoire simple</h2>
+<p>Dans un échantillonnage aléatoire simple, chaque objet ou personne d'une population aune chance équivalente de faire parti d'un échantillon et chaque combinaison de personnes d'une population a également une chance équivalente de prendre pars à un échantillonnage. L'explication de ce genre d'échantillonnage est évident par son titre. Ces deux composés définis l'échantillonnage aléatoire simple. Un exemple qui montre le fonctionnement d'un échantillonnage aléatoire simple est le suivant. Si une compagnie est sur le point de lancer un nouveau produit mais avant d'officiellement le lancer, ils veulent le tester donc ils mettent en place un système d'échantillonnage aléatoire. La limite est de 4 000 participants mais il y a 15 000 personnes qui se sont inscrits, cette compagnie vas aléatoirement choisir 4 000 personnes parmi ces 15 000 participants et va procéder a la prochaine étape.</p>
+<h2>Échantillonage aléatoire stratifié</h2>
+<p>Dans un échantillonnage aléatoire stratifié, la population est originairement subdivisée en sous catégories hétérogène définis en se basant sur un ou plusieurs critères. Puis, d'après ces sous groupement hétérogènes, on choisi au hasard des contestants est c'est de là que vient le genre d'échantillonnage aléatoire simple. La méthode d'échantillonnage stratifié permet d'avoir une représentation inclusif de différents groupes. Un exemple de ce genre de situation est le suivant. On veut faire passer une pétition au Collège Français des vies scolaire des élèves. Au lieu d'avoir 100 élèves de la même catégorie signer, on choisirai 25 élèves de la neuvième année, 25 élèves de la dixième, 25 élèves de la onzième et finalement 25 élèves de la douzième. Comme ça, s'est assurer que les données sont inclusif.</p>
+<h2>Échantillonnage aléatoire en grappes</h2>
+<p>Un échantillonnage se produit en se basant sur la situation géographique d'une certaine population visée, on la sépare en grappes pour en choisir un certain nombre de manière aléatoire afin d'obtenir un échantillon. Un des facteur qui rend ce genre d'échantillon pas évident est le fait qu'il est difficile de prédire la grandeur de l'échantillon car les grappes n'ont pas toutes la même quantité de personnes. Malgré cet inconvénient, il y a un coté avantageux. Ce type d'échantillonnage est idéal pour sonder une population qui est géographiquement étendue. Un exemple qui représente ce genre d'échantillonnage serait sur une échelle géographique. Si une personne veut faire une recherche sur la satisfaction des élèves du secondaire de Toronto, il est absolument dure à voir impossible d'envoyer un formulaire à tout ces élèves. Donc, ce rechercheur va aléatoirement sélectionner un certain nombre d'école et va envoyer des formulaires aux élèves qui atteignent ces écoles là.</p>
+<h2>Échantillonnage aléatoire systématique</h2>
+<p>La méthode d'échantillonnage systématique consiste à dresser la liste de tous les éléments de la population et de choisir au hasard chaque élément pour constituer l’échantillon. L’échantillonnage systématique est donc une variante de la méthode aléatoire simple, dans laquelle on sélectionne un échantillon à intervalles prédéterminés. Un des inconvénient est que cette méthode d'échantillonnage ne garantit pas un échantillon représentatif. Cependant, il existe aussi des avantages tels que le pouvoir de déterminer la grandeur et les éléments faisant partie de l'échantillon. En effet, je trouve que l'échantillonnage aléatoire systématique et l'échantillonnage aléatoire simple ont quelques facteurs en commun. </p>
+
+
+<h1>Exercices</h1>
+
+
+<p><a href="https://docs.google.com/document/d/1M1nYPkffw8c0qw3S9AWAVz6pM5xpdvhG5nnpap2f-TA/edit#" target="_blank">Exercices 1.1 et 1.2 - La représentation des données et l'échantillonage</a>
+</p>
